@@ -5,6 +5,7 @@ var styles = require('../styles')
 var UserDetails = require('./UserDetails')
 var UserDetailsWrapper = require('./UserDetailsWrapper')
 var MainWrapper = require('./MainWrapper')
+var Loading = require('./Loading')
 
 function StartOver(props) {
   return (
@@ -19,7 +20,7 @@ function StartOver(props) {
 function Results(props) {
   if(props.isLoading === true) {
     return (
-      <p>LOADING!</p>
+      <Loading text='The winner is'/>
     )
   }
 
